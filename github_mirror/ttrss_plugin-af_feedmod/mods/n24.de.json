@@ -1,0 +1,11 @@
+{
+    "name": "N24.de",
+    "author": "Markus Birth",
+    "stamp": 1369500284,
+    "feed": "http://feeds.n24.de/n24/homepage",
+    "match": "n24.de",
+    "config": {
+        "type": "xpath",
+        "xpath": "div[@class='c2a']"
+    }
+}
