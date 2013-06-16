@@ -1,0 +1,565 @@
+/*
+Tiny Tiny RSS Reeder Theme
+Author: zas
+Email: zaswiki@gmail.com
+*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,800italic,400,600,700,800);
+@import "default.css";
+/************************************************************
+* Global Settings
+*/
+body{
+  font-family: 'Open Sans',sans-serif !important;
+}
+
+/*body,*/
+div.hl.Content {
+  font-size: 16px !important;
+}
+
+div.cdmContentInner p {
+  max-width: 100% !important;
+}
+div.cdm.expanded div.cdmHeader a.title,
+div.cdm.active div.cdmHeader a.title,
+div.postTitle a{
+  font-size: 32px !important;
+}
+
+span.hlContent {
+  font-size: 12px !important;
+  margin-right: -20px;
+}
+
+/************************************************************
+* Sidebar
+*/
+.dijitTree {
+  background-color: #aba99d;
+	background-image: url(reeder_img/reeder_bg_dark.png);
+	background-image: url(reeder_img/reeder_stripes.png), url(reeder_img/reeder_bg_dark.png);
+  color: #aba99d;
+}
+
+#ttrssMain .dijitTreeExpando {
+  background-image: url(reeder_img/tree-expand.png);
+	position: relative;
+	left: +10px;
+}
+#ttrssMain .dijitTreeExpandoLeaf {
+  background-image: none;
+}
+#ttrssMain .dijitIconFolderOpen,
+#ttrssMain .dijitFolderOpened {
+	background: none;
+}
+#ttrssMain .dijitIconFolderClosed,
+#ttrssMain .dijitFolderClosed {
+	background: none;
+}
+#ttrssMain .dijitTreeRow,
+#ttrssMain .dijitTreeNode .dojoDndItemBefore,
+#ttrssMain .dijitTreeNode .dojoDndItemAfter {
+  background-color: #aba99d;
+	background-image: url(reeder_img/reeder_stripes.png), url(reeder_img/reeder_bg_dark.png);
+	color: #4f4e48;
+  display: block;
+  font-size: 12px;
+  line-height: 20px;
+	border: none;
+}
+#ttrssMain .dijitTreeRowHover,
+#ttrssMain .dijitTreeNode .dojoDndItemBeforeHover,
+#ttrssMain .dijitTreeNode .dojoDndItemAfterHover {
+  background-color: #aba99d;
+	background-image: url(reeder_img/reeder_stripes.png), url(reeder_img/reeder_bg_darker.png);
+	color: #4f4e48;
+}
+#ttrssMain .dijitTreeRowSelected {
+  background-color: #aba99d;
+	background-image: url(reeder_img/reeder_stripes.png), url(reeder_img/reeder_bg_darker.png);
+  color: #4f4e48;
+}
+#ttrssMain .dijitTreeLabel {
+  vertical-align: text-top;
+  margin: 0 8px;
+}
+#ttrssMain .dijitTreeIsRoot > .dijitTreeRow {
+  background-color: #bebcb0;
+  border-top: 1px solid #bebcb0 !important;
+  color: #4f4e48;
+  display: block;
+  font-size: 14px;
+  padding-top: 4px !important;
+  padding-bottom: 4px !important;
+}
+#ttrssMain .dijitTreeIsRoot > .dijitTreeRowHover {
+  background.color: #aba99d;
+	background-image: url(reeder_img/reeder_stripes.png), url(reeder_img/reeder_bg_darker.png);
+	color: #4f4e48;
+}
+#ttrssMain .dijitSplitterV,
+#ttrssMain .dijitGutterV {
+  background: #bebcb0;
+}
+#ttrssMain .dijitSplitterVHover {
+  background: #bebcb0;
+}
+
+#ttrssMain .dijitToolbar {
+  background: #e9e6d7;
+	background-image: url(reeder_img/reeder_bg_bright.png);
+  color: #4f4e48;
+	border: none;
+  padding: 6px 0 2px 4px;
+}
+
+div#headlines-toolbar,
+{
+	background-image: url(reeder_img/reeder_bg_bright.png);
+ 	border-bottom: 1px solid #bebcb0 !important;
+}
+
+#ttrssMain div#headlines-wrap-inner,
+div#headlines-frame {
+  background-image: url(reeder_img/reeder_bg_bright.png);
+}
+#ttrssMain div#headlines-toolbar a,
+#ttrssMain .dijitToolbar a {
+  color: #5a6e93 !important;
+}
+#ttrssMain div#headlines-toolbar a:hover,
+#ttrssMain .dijitToolbar a:hover {
+  color: #404b5e !important;
+}
+
+#trssMain div#main-toolbar {
+  position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 30px;
+	text-align: left;
+}
+
+.r {
+	position: relative;
+	right: -999px;
+  width:0;
+}
+
+#ttrssMain .dijitToolbar .dijitToggleButton,
+#ttrssMain .dijitToolbar .dijitButton,
+#ttrssMain .dijitToolbar .dijitDropDownButton,
+#ttrssMain .dijitToolbar .dijitComboButton {
+  vertical-align: top;
+}
+#ttrssMain .dijitToolbar .actionChooser .dijitToggleButton,
+#ttrssMain .dijitToolbar .actionChooser .dijitButton,
+#ttrssMain .dijitToolbar .actionChooser .dijitDropDownButton,
+#ttrssMain .dijitToolbar .actionChooser .dijitComboButton {
+  vertical-align: middle;
+}
+#ttrssMain .dijitButton .dijitButtonNode,
+#ttrssMain .dijitDropDownButton .dijitButtonNode,
+#ttrssMain .dijitComboButton .dijitButtonNode,
+#ttrssMain .dijitToggleButton .dijitButtonNode,
+#ttrssMain .dijitSelect,
+#ttrssMain .dijitSelect .dijitButtonContents,
+#ttrssMain .dijitTextBox,
+#ttrssMain .dijitTextBox .dijitButtonNode {
+  color: #4f4e48;
+  background: #d2d0c4 !important;
+  border: 0 !important;
+	border-color: #bebcb0;
+  border-radius: 3px !important;
+  padding: 3px 6px !important;
+}
+#ttrssMain .dijitButtonHover .dijitButtonNode,
+#ttrssMain .dijitDropDownButtonHover .dijitButtonNode,
+#ttrssMain .dijitToggleButtonHover .dijitButtonNode,
+#ttrssMain .dijitComboButtonHover .dijitButtonNode {
+  border: 0 !important;
+	border-color: #bebcb0;
+	border-radius: 3px !important;
+  background: #bebcb0 !important;
+}
+#ttrssMain .dijitSelect,
+#ttrssMain .dijitSelect .dijitButtonContents,
+#ttrssMain .dijitTextBox,
+#ttrssMain .dijitTextBox .dijitButtonNode {
+  padding: 1px 6px !important;
+}
+#ttrssMain .dijitSelect .dijitArrowButton {
+  background: none !important;
+  border: 0 !important;
+  padding: 0 !important;
+}
+#ttrssMain .dijitSelectHover .dijitArrowButton {
+  background: #aba99d !important;
+  border: 0 !important;
+}
+#ttrssMain .dijitSelect .dijitArrowButtonInner,
+#ttrssMain .dijitComboBox .dijitArrowButtonInner,
+#ttrssMain .dijitArrowButtonInner {
+  background: url(reeder_img/triangle_full_down.png) 50% 10%;
+}
+#ttrssMain .dijitSelectHover .dijitArrowButtonInner,
+#ttrssMain .dijitComboBoxHover .dijitArrowButtonInner,
+#ttrssMain .dijitArrowButtonInner {
+  background-position: 50% 50% !important;
+}
+#ttrssMain .dijitMenu {
+  background: #aba99d;
+  border: 1px;
+	border-color: #bebcb0;
+}
+#ttrssMain .dijitMenu td.dijitMenuItemLabel {
+  color: #4f4e48;
+  font-size: 14px !important;
+}
+#ttrssMain .dijitSelectMenu .dijitMenuItemHover td,
+#ttrssMain .dijitSelectMenu .dijitMenuItemSelected td,
+#ttrssMain .dijitMenuItemHover,
+#ttrssMain .dijitMenuItemSelected {
+  background-color: #2e2e2e !important;
+  background-image: none !important;
+}
+#ttrssMain .dijitSelectMenu .dijitMenuItemHover td td.dijitMenuItemLabel,
+#ttrssMain .dijitSelectMenu .dijitMenuItemSelected td td.dijitMenuItemLabel,
+#ttrssMain .dijitMenuItemHover td.dijitMenuItemLabel,
+#ttrssMain .dijitMenuItemSelected td.dijitMenuItemLabel {
+  color: #fafafa;
+}
+#ttrssMain .dijitSelectMenu .dijitMenuItem td,
+#ttrssMain .dijitComboBoxMenu .dijitMenuItem {
+  border: 0 !important;
+  padding: 5px 6px !important;
+}
+#feedTree .counterNode,
+#feedTree .counterNode.aux {
+  background-color: #d2d0c4;
+	color: #4f4e48;
+	border-color: #bebcb0;
+  border: 1;
+  font-size: 12px;
+  line-height: 16px;
+  padding: 0 8px;
+  top: 3px;
+  min-width: 0;
+  border-radius: 3px;
+}
+#feeds-holder,
+#content-wrap {
+  border-width: 0;
+}
+
+/****************************************************************************
+* Groups
+*/
+div.cdmFeedTitle {
+	background: #e9e6d7;
+	background-image: url(reeder_img/reeder_bg_bright.png);
+  
+}
+
+/****************************************************************************
+* Posts
+*/ 
+div.cdm.expandable.Selected.active a,
+div.cdm.expanded a,
+div.hl.active.Selected a,
+div.postReply a {
+  color: #5a6c83 !important;
+	text-shadow: none !important;
+}
+
+div.cdm.expandable.Selected.active a:hover,
+div.cdm.active a:hover,
+div.cdm.expanded a:hover,
+div.hl.active.Selected a:hover,
+div.postReply a:hover {
+	color: #404b5e !important;
+}
+
+div.cdm.expandable,
+div.cdm.expanded,
+div.cdm.expanded.Unread,
+div.cdm.expandable.Unread,
+div#headlines-frame .hl {
+  background: #e9e6d7;
+	background-image: url(reeder_img/reeder_bg_dark.png);
+	border: 1px solid #bebcb0;
+	border-top: 1px solid #bebcb0;
+	position:relative;
+	margin-top: -1px;
+}
+
+div.cdm.expandable.Selected.active,
+div.cdm.active {
+	background-image: url(reeder_img/reeder_bg_dark.png);
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+  border: 1px solid #bebcb0;
+  margin: 6px;
+  position: relative;
+}
+
+div#headlines-frame .hl {
+  background-image: url(reeder_img/reeder_bg_dark.png);
+	border: 1px solid #bebcb0;
+}
+
+div.cdm.expanded.Selected.active,
+div.content-insert{
+	border: 1px solid #bebcb0;
+  /*
+	-moz-box-shadow:    0px 0px 20px 3px #636260;
+  -webkit-box-shadow: 0px 0px 20px 3px #636260;
+  box-shadow:         0px 0px 20px 3px #636260;
+	margin: 20px;
+	*/
+}
+
+div#headlines-frame .hl,
+div.cdmHeader {
+  background-image: url(reeder_img/reeder_bg_dark.png);
+}
+
+div.cdmContent{
+	background-image: url(reeder_img/reeder_bg_dark.png);
+	padding: 10px;
+}
+
+div.cdmFooter {
+	font-size: 12px !important;
+	background-image: url(reeder_img/reeder_bg_dark.png);
+	padding:10px;
+}
+
+div.hl.marked.active.Selected,
+div.hl.active.Selected,
+div.hl:hover,
+div.cdmHeader:hover {
+  background-image: url(reeder_img/reeder_bg_darker.png) !important;
+}
+
+div.postTitle {
+  margin-top: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	line-height: 35px;
+	overflow: visible !important;
+	white-space: normal !important;
+}
+
+div.postHeader {
+  background-image: url(reeder_img/reeder_bg_dark.png) !important;
+  border-top: 1px solid #bebcb0 !important;
+}
+div.postContent,
+div.dijitContentPane{
+  background-image: url(reeder_img/reeder_bg_bright.png);
+}
+
+
+/* Remove functions I don't want */
+div.cdmHeader .dijitCheckBox, 
+div#headlines-frame .dijitCheckBox
+{
+	width: 0 !important;
+}
+
+div.cdmHeader img[src*="images/pub_unset.svg"],
+div#headlines-frame img[src*="images/pub_unset.svg"] {
+  width: 0 !important;
+}
+div.cdmHeader img[src*="images/pub_set.svg"],
+div#headlines-frame img[src*="images/pub_set.svg"] {
+	width: 0 !important;
+}
+div.cdmHeader .hlScorePic,
+div#headlines-frame .hlScorePic {
+	width: 0 !important;
+}
+
+/* Replace images */
+
+img[src*="plugins/mobilize/but.png"] {
+  background: transparent url(reeder_img/mobilize.png) !important;
+  height: 24px !important;
+  padding-right: 24px;
+  width: 0 !important;
+  display: inline-block;
+}
+
+img[src*="plugins/note/note.png"] {
+  background: transparent url(reeder_img/note.png) 50% !important;
+  height: 24px !important;
+  padding-right: 24px;
+  width: 0 !important;
+  display: inline-block;
+}
+
+
+img[src*="images/tag.png"] {
+  background: transparent url(reeder_img/tag.png) !important;
+	height: 24px !important;
+	padding-right: 24px;
+	width: 0 !important;
+	display: inline-block;
+}
+
+img[src*="images/pub_set.svg"] {
+  background: transparent url(reeder_img/rss.png) !important;
+	height: 24px !important;
+	padding-right: 24px;
+	width: 0 !important;
+	display: inline-block;
+}
+
+img[src*="images/recently_read.png"] {
+  background: transparent url(reeder_img/watch.png) !important;
+  height: 24px !important;
+  padding-right: 24px;
+  width: 0 !important;
+  display: inline-block;
+}
+
+img[src*="images/fresh.png"] {
+  background: transparent url(reeder_img/flash.png) !important;
+  height: 24px !important;
+  padding-right: 24px;
+  width: 0 !important;
+  display: inline-block;
+ }
+
+ img[src*="images/archive.png"] {
+  background: transparent url(reeder_img/lock.png) !important;
+  height: 24px !important;
+  padding-right: 24px;
+  width: 0 !important;
+  display: inline-block;
+}
+
+img[src*="images/mark_set.svg"] {
+	background: transparent url(reeder_img/star_full.png) !important;
+	height: 24px !important;
+	padding-right: 24px;
+	width: 0 !important;
+  display: inline-block;
+}
+
+img[src*="images/mark_unset.svg"] {
+  background: transparent url(reeder_img/star.png) no-repeat !important;
+	height: 24px !important;
+	padding-right: 24px;
+  width: 0 !important;	
+	display: inline-block;
+}
+
+img[src*="images/indicator_white.gif"] {
+  background: transparent url(reeder_img/loader-bars.gif) 50% 100% no-repeat !important;
+  height: 16px !important;
+	position: relative;
+	left: -9px !important;
+  padding-right: 16px;
+  width: 0 !important;
+  display: inline-block;
+}
+img[src*="images/indicator_tiny.gif"] {
+  background: transparent url(reeder_img/loader-bars.gif) 50% 100% no-repeat !important;
+  height: 11px !important;
+  padding-right: 16px;
+  width: 0 !important;
+  display: inline-block;
+}
+
+ /* Replace plugin images */
+img[src*="plugins/mail/mail.png"] {
+  background: transparent url(reeder_img/mail.png) no-repeat !important;
+	height: 24px !important;
+  padding-right: 24px;
+  width: 0 !important;
+  display: inline-block;
+}
+
+img[src*="plugins/share/share.png"] {
+	background: transparent url(reeder_img/share.png) no-repeat !important;
+	height: 24px !important;
+	padding-right: 24px;
+	width: 0 !important;
+  display: inline-block;
+}
+img[src*="plugins/embed_original/button.png"] {
+ background: transparent url(reeder_img/embed.png) no-repeat !important;
+ height: 24px !important;
+ padding-right: 24px;
+ width: 0 !important;
+ display: inline-block;
+}
+
+
+img[src*="plugins/inline_readability/readability.png"],
+img[src*="plugins/readability/readability.png"],
+img[src*="plugins/readability_mobile/readability_mobile.png"]
+{
+  background: transparent url(reeder_img/readability.png) no-repeat !important;
+  height: 24px !important;
+  padding-right: 24px;
+  width: 0 !important;
+  display: inline-block;
+}
+
+img[src*="plugins/evernote/evernote.png"] {
+  background: transparent url(reeder_img/evernote.png) no-repeat !important;
+  height: 24px !important;
+  padding-right: 24px;
+  width: 0 !important;
+  display: inline-block;
+}
+
+/*************************************************************************************
+* Loader
+*/
+#overlay {
+  background: #e9e6d7;
+	background-image: url(reeder_img/tt-rss_logo.png), url(reeder_img/linen_bg.png);
+	background-repeat: no-repeat, repeat;
+  background-position: center 5%;
+  color: #4f4e48;
+}
+div.insensitive{
+  color: #4f4e48;
+
+}
+#overlay_inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -220px;
+  text-align: center;
+  background-color: #e9e6d7;
+	background-image: url(reeder_img/reeder_stripes.png); url(reeder_img/reeder_bg_dark.png);
+	-moz-box-shadow:    0px 0px 30px 0px #000000;
+  -webkit-box-shadow: 0px 0px 30px 0px #000000;
+  box-shadow:         0px 0px 30px 0px #000000;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+}
+#overlay_inner .dijitProgressBar {
+  display: inline-block;
+  margin-top: 20px;
+}
+#overlay_inner .dijitProgressBarEmpty {
+  border: 0;
+}
+#overlay_inner .dijitProgressBarTile {
+  border-radius: 3px;
+  background-color: #4f4e48;
+}
+#overlay_inner .dijitProgressBarFull {
+  border: 0;
+}

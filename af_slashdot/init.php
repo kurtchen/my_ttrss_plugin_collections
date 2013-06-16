@@ -55,7 +55,7 @@ class Af_Slashdot extends Plugin {
                     // and build a completely new DOMObject to discard
                     // everything else.
                     $search = new DomXPath($doc);
-                    $tags = $search->query('//div|//img|//a|//br');
+                    $tags = $search->query('//div|//img|//br');
                     foreach ($tags as $tag) {
                         $tag->parentNode->removeChild($tag);
                     }

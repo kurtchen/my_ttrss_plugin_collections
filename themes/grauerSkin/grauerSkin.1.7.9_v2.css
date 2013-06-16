@@ -1,0 +1,1297 @@
+/*
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+    border: 0px none;
+    outline: 0px none;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: none repeat scroll 0% 0% transparent;
+    margin: 0px;
+    padding: 0px;
+}
+
+*/
+
+.dj_a11y .dijitButtonNode {
+    border: none !important;
+    padding: 0px !important;
+}
+/**/
+body,
+body#ttrssPrefs, 
+body#ttrssLogin {
+    color: rgb(5, 5, 5);
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+body#ttrssMain  {
+	background: rgb(220, 220, 220) !important;
+    color: rgb(85, 85, 85) !important;
+    font-family: sans-serif !important;
+    font-size: 10px !important;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(176,176,176);
+}
+
+a:hover {
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
+
+
+/* background and border */
+body, 
+#feeds-holder,
+#main-toolbar,
+#toolbar, 
+#headlines-frame {
+	background-color: transparent;
+	background-image: none;
+	border: none;
+}
+
+#content-wrap {
+	border: none;
+}
+
+div#headlines-frame {
+	background-color: rgb(160,160,160) !important;
+	
+	background-image: url(images/grauerSkin_hgr_l.png);
+	background-repeat: repeat-y;
+}
+
+div#headlines-wrap-inner {
+	border: solid 1px rgb(100,100,100);
+	border-width: 1px 0px 0px 1px;
+    border-radius: 7px 0px 0px 0px ;
+    -moz-border-radius: 7px 0px 0px 0px;
+    -webkit-border-radius: 7px 0px 0px 0px;
+	background-color: transparent !important;	
+}
+
+div#headlines-toolbar {
+	display:block;
+	border: none; 
+	padding: 2px 0px 1px 20px !important;
+	margin: 0px !important;
+	font-size: 1.0em !important;
+	
+	line-height: normal;	
+	height:42px;
+	border-bottom: 1px solid rgb(150,150,150);
+	background-color: rgb(249, 249, 249);
+	background-image: 	url(images/grauerSkin_hgr_ol.png),
+						url(images/grauerSkin_hgr_o.png), 			 
+						url(images/grauerSkin_hgr_l.png);
+						
+	background-repeat: 		no-repeat;
+	background-position: 	0px 0px,
+							32px 0px,
+							0px 32px;
+	background-size: 		32px 32px,
+							2000px 32px,
+							32px 2000px;
+	
+}
+div#headlines-toolbar a{
+	color: rgb( 120, 120, 120);
+	font-size: 1.1em !important;
+}
+
+div#headlines-toolbar a:hover{
+	color: rgb( 0, 0, 0);
+	font-size: 1.1em !important;
+}
+
+div#headlines-toolbar span.r {
+	display:block;
+    float: none;
+	position: relative;
+    
+	margin: 0px 0px 4px -20px;
+	padding: 0px ;
+	
+	border-bottom: 1px solid rgba( 23, 24, 21, 0.06);
+	text-align: left;
+vertical-align:top;
+line-height: 1.4em;
+}
+div#headlines-toolbar #selected_prompt {
+	float:right;
+	color: rgb(80, 80, 80);
+	font-weight: normal;
+	font-style: normal;
+	font-size: 0.9em !important;
+	font-family: sans-serif;
+	text-transform: none;
+	text-align: left;
+}
+div#headlines-toolbar #feed_title {
+ padding: 0px 4px 0px 14px;
+	color: rgb(0, 0, 0);
+	font-weight: bold;
+	font-style: normal;
+	font-size: 1.4em !important;
+	font-family: sans-serif;
+	text-transform: uppercase;
+	text-align: left;
+}
+
+div#headlines-toolbar span.r a,
+div#headlines-toolbar span.r a:hover{
+	color: rgb( 0, 0, 0);
+}
+
+/*ProgressBar*/
+#overlay {
+	vertical-align: middle;
+	background: none repeat scroll 0% 0% rgba(220, 220, 220, 0.95);
+}
+
+#overlay_inner {
+    font-weight: bold;
+    width: 300px;
+    margin: auto;
+	margin-top:40px;
+}
+
+.claro .dijitProgressBar,
+.claro .dijitProgressBarFull,
+.claro .dijitProgressBarLabel {
+	border-width: 0px;
+	border-color: rgb( 0, 0, 0);
+	height: 14px;
+	font-size: 10px !important;
+	
+	vertical-align: middle !important;
+	text-align:	center !important;
+}
+
+.claro .dijitProgressBar,
+.claro .dijitProgressBarFull {
+	box-shadow: 0px 1px 5px -2px rgba(20, 0, 0, 0.5) inset;
+}
+
+.claro .dijitProgressBar {
+    margin: 2px 0px;
+}
+
+.claro .dijitProgressBarEmpty {
+    background-color: rgb(215, 215, 215);
+	border: solid 1px rgb(140,140,140);
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;	
+}
+
+.claro .dijitProgressBarTile {
+    background-color: rgb(141, 144, 145);
+    background-repeat: repeat-x;
+    background-image: linear-gradient(	rgba(255, 255, 255, 0.93) 0px,
+										rgba(255, 255, 255, 0.81) 1px,
+										rgba(255, 255, 255, 0.9) 40%,
+										rgba(255, 255, 255, 0.7) 85%,
+										rgba(255, 255, 255, 0.5) 100%);
+}
+
+.claro .dijitProgressBarLabel {
+    color: rgb(0, 0, 0);
+}
+
+/*Splitter*/
+.claro .dijitSplitterH,
+.claro .dijitSplitterV,
+.claro .dijitSplitterHHover,
+.claro .dijitSplitterVHover {
+    font-size: 1px;
+    background-color: transparent;
+}
+
+.claro .dijitSplitterH,
+.claro .dijitSplitterHHover {
+	border-top: 1px solid rgb(110,110,110);
+}
+
+.claro .dijitSplitterHHover {
+	background-image: none;
+    background-image: -moz-linear-gradient(left center , rgba(255, 255, 255, 0) 25px, 
+														 rgba(255, 255, 255, 0.75) 50%, 
+														 rgba(255, 255, 255, 0) 75%);
+}
+
+.claro .dijitSplitterVHover {
+    background-image: none;
+    background-image: -moz-linear-gradient(center top , rgba(255, 255, 255, 0) 25%,
+														rgba(255, 255, 255, 0.75) 50%,
+														rgba(255, 255, 255, 0) 75%);
+}
+/**/
+
+/*Article Toolbar*/
+div#toolbar .button_nav img{
+	display:none;
+}
+div#toolbar .button_nav{
+	margin-right: 4px;
+    border: 1px solid rgba( 95, 94, 91, 0);
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	
+	background-color: transparent !important;
+	background-image: url("images/grauerSkin_article_toolbar.png");
+	background-size: 120px 20px;	
+	background-repeat: no-repeat;
+	
+	width: 22px;
+	height: 22px;
+	
+	opacity: 1;
+	overflow: hidden;
+	cursor: pointer;
+	
+	vertical-align: middle !important;
+	text-align:	center !important;
+
+	transition-property: background-color, border, box-shadow;
+	transition-duration: 0.35s; 
+}
+
+div#toolbar .button_nav[title~="Subscribe"]{
+	background-position: 0px center;
+}
+div#toolbar .button_nav[title~="Toggle"]{
+	background-position: -20px center;
+}
+div#toolbar .button_nav[title~="Mark"]{
+	background-position: -40px center;
+}
+div#toolbar .button_nav[title~="Refresh"]{
+	background-position: -60px center;
+}
+div#toolbar .button_nav[title~="Previous"]{
+	background-position: -80px center;
+}
+div#toolbar .button_nav[title~="Next"]{
+	background-position: -100px center;
+	
+}
+			
+div#toolbar .button_nav:hover{
+	border-color: rgba( 95, 94, 91, 0.4) !important;
+	background-color: rgb( 240, 240, 240)  !important;
+	background-image: url("images/grauerSkin_article_toolbar.png");
+	background-size: 120px 20px;	
+	background-repeat: no-repeat;
+	    
+
+	box-shadow: 0px 0px 4px -2px rgba( 0, 0, 0, 0.3);
+	
+	opacity: 1;
+	cursor: pointer;
+	
+	transition-property: background-color, border, box-shadow;
+	transition-duration: 0.35s; 
+}
+/**/
+
+/*Toolbar Button*/
+/*fix*/
+div#toolbar .dijitDropDownButton .dijitArrowButtonInner,
+div#toolbar .dijitComboButton .dijitArrowButtonInner {
+    height: 16px;
+    width: 16px;
+	padding: 1px;	
+}
+
+div#toolbar .dijitButtonContents,
+div#toolbar .dijitSelectLabel, 
+div#toolbar .dijitTextBox .dijitInputInner, 
+div#toolbar .dijitValidationTextBox .dijitValidationContainer {
+    padding: 0px 0px;
+}
+
+/**/
+div#toolbar .dijitButton .dijitButtonNode,
+div#toolbar .dijitDropDownButton .dijitButtonNode, 
+div#toolbar .dijitComboButton .dijitButtonNode, 
+div#toolbar .dijitToggleButton .dijitButtonNode, 
+div#toolbar .dijitComboBox .dijitButtonNode {
+    padding: 0px;
+	background-color: transparent;
+	background-image: none;
+	border-width: 0px;
+	border-radius: 0px;
+}
+div#toolbar .dijitButtonHover .dijitButtonNode,
+div#toolbar .dijitDropDownButtonHover .dijitButtonNode, 
+div#toolbar .dijitComboButtonHover .dijitButtonNode, 
+div#toolbar .dijitToggleButtonHover .dijitButtonNode, 
+div#toolbar .dijitComboBoxHover .dijitButtonNode {
+    padding: 0px;
+	background-color: transbarent;
+	background-image: none;
+	border-width: 0px;
+	border-radius: 0px;
+}	
+
+/*Button hgr*/
+div#headlines-toolbar .dijitSelect,
+div#toolbar .dijitSelect,
+div#toolbar .dijitComboButton,
+div#toolbar .dijitDropDownButton {
+    border: 1px solid rgba( 55, 64, 71, 0.1);
+	background-color: transparent;
+	background-image: none;
+	
+	transition-property: background-color, border, box-shadow;
+	transition-duration: 0.35s; 
+}
+div#toolbar .dijitDropDownButton/*Aktion Button*/{
+	border: 1px solid rgba( 95, 94, 91, 0);
+}
+
+div#headlines-toolbar .dijitSelectHover,	div#headlines-toolbar .dijitSelectOpened,
+div#toolbar .dijitSelectHover ,			div#toolbar .dijitSelectOpened,
+div#toolbar .dijitComboButtonHover,		div#toolbar .dijitComboButtonOpened,
+div#toolbar .dijitDropDownButtonHover,	div#toolbar .dijitDropDownButtonOpened {
+    border-color: rgba( 95, 94, 91, 0.4);
+	background-color: transparent;	
+	background-color: rgba( 250, 250, 250,0.6);
+	background-image: none;
+	box-shadow: 0px 0px 4px -2px rgba( 0, 0, 0, 0.3);
+	
+	transition-property: background-color, border, box-shadow;
+	transition-duration: 0.35s; 
+}
+
+/*Button innen links*/
+div#headlines-toolbar .dijitSelect .dijitButtonContents,
+div#toolbar .dijitSelect .dijitButtonContents,
+div#toolbar .dijitComboButton .dijitButtonNode,
+div#toolbar .dijitDropDownButton .dijitButtonNode {
+    padding: 0px; /*hover fix*/
+	background-color: transparent;
+		
+	border-width: 1px;
+    border-style: none solid none none;
+    border-color: rgba( 55, 64, 71, 0.1);
+		
+	transition-property: background-color, border;
+	transition-duration: 0.35s; 
+}
+div#toolbar .dijitComboButton .dijitButtonNode+.dijitButtonNode,
+div#toolbar .dijitDropDownButton .dijitButtonNode {/*fix ^^*/
+	border-width: 0px; 	
+}
+div#toolbar .dijitComboButton .dijitButtonNode{
+	border-style: none;
+}
+div#toolbar .dijitDropDownButton .dijitButtonText/*Aktion Button*/{
+	display:none;
+}
+div#headlines-toolbar .dijitSelectHover .dijitButtonContents, div#headlines-toolbar .dijitSelectOpened .dijitButtonContents,
+div#toolbar .dijitSelectHover .dijitButtonContents, 			div#toolbar .dijitSelectOpened   .dijitButtonContents,
+div#toolbar .dijitComboButtonHover .dijitButtonNode, 			div#toolbar .dijitComboButtonOpened .dijitButtonNode,
+div#toolbar .dijitDropDownButtonHover .dijitButtonNode,		div#toolbar .dijitDropDownButtonOpened .dijitButtonNode {
+    border-color: rgba( 95, 94, 91, 0.4);
+	background-image: none;	
+}
+
+/*Button innen rechtes Bild*/
+div#headlines-toolbar .dijitSelect .dijitDownArrowButton,
+div#toolbar .dijitSelect .dijitDownArrowButton,
+div#toolbar .dijitComboButton .dijitArrowButton {
+    padding: 0px;
+	border: 1px solid rgba( 255, 255, 255, 0.4);
+	background-color: transparent;
+	background-image: linear-gradient(	rgba(255, 255, 255, 0.5) 0%, 
+										rgba(255, 255, 255, 0) 100%);
+}
+div#headlines-toolbar .dijitSelect .dijitDownArrowButton .dijitArrowButtonInner,
+div#toolbar .dijitSelect .dijitDownArrowButton .dijitArrowButtonInner /*Select Button*/{
+    width: 16px;
+    height: 16px;
+    margin: 0px auto;
+    background-image: url("images/grauerSkin_buttonArrows_sm.png");
+    background-size: 128px 16px;	
+	background-repeat: no-repeat;
+	background-position: -64px center;
+}
+div#toolbar .dijitComboButton .dijitArrowButton /*Mark as read Button*/{
+	background-image: none;
+}
+div#toolbar .dijitComboButton .dijitArrowButton .dijitArrowButtonInner {
+    width: 16px;
+    height: 16px;
+    margin: 0px auto;
+    background-image: url("images/grauerSkin_buttonArrows.png");
+    background-size: 128px 16px;	
+	background-repeat: no-repeat;
+	background-position: 0px center;
+}
+div#toolbar .dijitDropDownButton .dijitArrowButtonInner/*Aktion Button*/{
+	background-image: url("images/grauerSkin_pf_u.png");
+	background-size: 20px 20px;	
+	background-repeat: no-repeat;
+	background-position: 0px center;
+}
+
+div#headlines-toolbar .dijitSelectHover .dijitDownArrowButton, 	div#headlines-toolbar .dijitSelectOpened .dijitDownArrowButton,
+div#toolbar .dijitSelectHover .dijitDownArrowButton,				div#toolbar .dijitSelectOpened  .dijitDownArrowButton,
+div#toolbar .dijitComboButtonHover .dijitArrowButton,				div#toolbar .dijitComboButtonOpened .dijitArrowButton {
+    border-color: rgba( 255, 255, 255, 0.8);	
+	background-color: transparent;	
+	
+	transition-property: background-color, border ;
+	transition-duration: 0.35s; 
+}
+div#headlines-toolbar .dijitSelectHover .dijitDownArrowButton .dijitArrowButtonInner, 	div#headlines-toolbar .dijitSelectOpened .dijitDownArrowButton .dijitArrowButtonInner,
+div#toolbar .dijitSelectHover .dijitDownArrowButton .dijitArrowButtonInner, div#toolbar .dijitSelectOpened .dijitDownArrowButton .dijitArrowButtonInner /*Select Button*/{
+	background-position: 0px center;
+}
+/* -- Beschriftung -- */
+/**/
+
+div#headlines-toolbar .dijitSelect .dijitButtonText,
+div#toolbar .dijitSelect .dijitButtonText,
+div#toolbar .dijitComboButton .dijitButtonText,
+div#toolbar .dijitDropDownButton .dijitButtonText {
+	padding: 0px 2px 0px 4px;
+	margin: 0px;
+	white-space: nowrap;
+    text-align: left;
+	font-size: 0.9em;
+	color: rgb(81,86,81);
+	background-color: rgba( 200, 0, 0, 0.0);
+	transition-property: color;
+	transition-duration: 0.35s; 	
+}
+div#headlines-toolbar .dijitSelect .dijitButtonText{
+	font-size: 1.0em; /*fix*/
+}
+div#headlines-toolbar .dijitSelectHover .dijitButtonText,	div#headlines-toolbar .dijitSelectOpened .dijitButtonText,
+div#toolbar .dijitSelectHover .dijitButtonText,			div#toolbar .dijitSelectOpened .dijitButtonText,
+div#toolbar .dijitComboButtonHover .dijitButtonText,		div#toolbar .dijitComboButtonOpened .dijitButtonText,
+div#toolbar .dijitDropDownButtonHover .dijitButtonText,	div#toolbar .dijitDropDownButtonOpened .dijitButtonText {
+	color: rgb(31,36,41);
+	background-color: transparent;
+	background-image: none;
+}
+
+
+
+/**/
+/*menue*/
+#ttrssMain > .dijitPopup {
+    
+}
+
+#ttrssMain .dijitMenu {
+	padding:2px;
+	background-color: rgb(248,248,248);
+	border: 1px solid rgb( 81, 86, 82) !important;
+	box-shadow: 0px 0px 5px rgba( 0, 0, 0, 0.5);
+}
+
+#ttrssMain .dijitMenuItem > *{
+	font-size: 1.3em;
+	color: rgb(31,36,41);
+	padding: 0px;
+	border-top:1px solid rgba( 0, 0, 0,0) !important;
+	border-bottom:1px solid rgba( 0, 0, 0,0) !important;
+}
+
+#ttrssMain .dijitSelectSelectedOption * {
+    font-weight: bold;
+	color: rgb(31,36,41);
+}
+
+#ttrssMain .dijitMenuItem td {
+	border: none;
+}
+
+#ttrssMain .dijitMenuItem td.dijitMenuItemLabel{
+	padding: 1px 4px;
+}
+
+#ttrssMain .dijitMenuItemSelected  > *{
+	background-color: rgb(230,230,230) !important;
+	background-image: none !important;
+}
+
+#ttrssMain .dijitMenuItemHover > * {
+	background-color: rgb(230,230,230) !important;
+	background-image: linear-gradient(	rgba( 85, 85, 85, 0.2) 0%,
+										rgba(235, 235, 235, 0.2) 2px,
+										rgba(232, 232, 232, 0.2) 30%,
+										rgba(245, 245, 245, 0.5) 85%) !important;
+    background-repeat: repeat-x;
+	border-top:1px solid rgb(253, 253, 253) !important;
+	border-bottom:1px solid rgb(221, 221, 221) !important;
+	
+}
+#ttrssMain .dijitMenuItemDisabled,
+#ttrssMain .dijitMenuItemDisabled > * {
+	background-color: transparent  !important;
+	background-image: none !important;
+	border-bottom: 1px solid rgb(120,120,120) !important;
+}
+
+
+/* Feed List */
+#feeds-holder{
+	overflow-y: auto;
+}
+
+#ttrssMain #feedTree{
+    height:auto !important;
+	
+	margin: 2px 2px 2px 0px;
+	padding: 12px 0px 0px 0px;
+	
+	background-color: rgb(229, 229, 229);
+	
+	
+	background-color : 	rgb(229, 229, 229) !important;
+	background-repeat: 	repeat-x  !important;
+	background-position:0px 0px  !important;
+	background-size:	100% 40px !important;
+	background-image: 	linear-gradient(rgba( 235, 235, 235, 0.0) 0%,
+										rgba( 255, 255, 255, 0.2) 1px,
+										rgba( 255, 255, 255, 0.4) 20%,
+										rgba( 229, 229, 229, 0.2) 80%,										
+										rgba( 200, 200, 200, 0) 100%) !important;
+	
+	
+	
+	border-radius: 0px 8px 8px 0px;
+	-moz-border-radius: 0px 8px 8px 0px;
+	-webkit-border-radius: 0px 8px 8px 0px;
+	border: solid 1px rgb(180,180,180);
+	border-left:0px;
+	box-shadow: 1px 1px 4px rgba(180,180,180, 0.5);
+	vertical-align: top;
+}
+
+#ttrssMain #feedTree > .dijitTreeIsRoot{
+	border: 0px solid rgb(208,208,208) !important;
+	margin: 0px 4px 6px 0px !important;
+}
+#ttrssMain #feedTree > .dijitTreeIsRoot:before{
+	content: "Feeds" ;
+    color: rgb(0, 0, 0);
+	font-family: 	Times, "Times New Roman", Georgia, serif;
+    font-size: 2.2em;
+	padding: 0px 0px 0px 20px !important;
+}
+#ttrssMain .dijitTreeIsRoot > .dijitTreeRow {
+	border-top: 1px solid rgb(220,220,220) !important;
+	margin: 0px 0px 4px 0px; 
+}
+#ttrssMain .dijitTreeIsRoot > .dijitTreeContainer{
+	border: 0px solid rgb(180,0,0);
+}
+
+#ttrssMain .dijitTreeRow,
+#ttrssMain .dijitTreeRowHover,
+#ttrssMain .dijitTreeRowSelected {
+    width:100% !important;
+	background-color: rgba(255, 255, 255, 0);
+	border: 0px solid rgb(180,0,0); 
+    padding: 4px 0px 4px 0px;
+    margin: 0px;
+    border: 0px;
+	font-size: 1.2em;
+    color: rgb(0, 0, 0);
+	margin-right: 0px;
+	overflow: hidden; 
+	text-overflow: ellipsis; 
+	transition-property: background-color;
+}
+#ttrssMain .dijitTreeRow {
+	background-color: rgba(255, 255, 255, 0);
+	transition-duration: 0.65s;
+}
+#ttrssMain .dijitTreeRowSelected {
+    background-color: rgba(255, 255, 255, 0.6);
+	background-image: url("");
+}
+#ttrssMain .dijitTreeRowHover {
+    background-color: rgba(255, 255, 255, 0.4);
+	background-image: url("");
+    transition-duration: 0.65s;
+}
+
+#ttrssMain .dijitTreeExpando {
+    background-image: url("images/grauerSkin_treeExpandImages.png");
+}
+
+#ttrssMain .dijitFolderClosed ,
+#ttrssMain .dijitFolderOpened{
+	background-image: url("images/grauerSkin_commonIconsObjActEnabled_32.png");
+	background-size: 512px 16px;	
+	background-repeat: no-repeat;
+}
+
+#ttrssMain .dijitTreeExpandoLeaf,
+#ttrssMain .dj_ie6 .dijitTreeExpandoLeaf {
+    background-image: none;
+}
+
+#feedTree .counterNode {
+    font-weight: bold;
+    display: inline-block;
+    font-size: 0.9em;
+    text-align: center;
+    border: 0px solid rgb(16, 16, 24);
+    color: rgb( 220, 220, 220);
+	/*background: transparent !important;*/
+	background: rgb( 120, 120, 120) !important;
+    border-radius: 2px;
+    vertical-align: middle;
+    float: right;
+    margin-right: 15px;
+	padding:0px 2px;
+    position: relative;
+    top: 0px;
+    min-width: 23px;
+}
+/*
+#feedTree .counterNode:before {
+	content: "(";
+	font-size: 1.0em !important;
+	color: rgb( 20, 20, 20);
+}
+
+#feedTree .counterNode:after {
+	content: ")";
+	font-size: 1.0em !important;
+	color: rgb( 20, 20, 20);
+}
+*/
+/* Entries */
+/* --- Listen Entrie-Anzeige --- */
+div.hl,
+div.hl.active,
+div.hl.Selected {
+	overflow: hidden;
+
+	width:96%;
+	max-width:880px;
+	
+	background-color : 	rgb(229, 229, 229) !important;
+	background-repeat: 	repeat-y  !important;
+	background-position:0px 0px  !important;
+	background-size:	26px 100%, 100% 100% !important;
+	background-image: 	url(images/grauerSkin_hgr_l.png),
+						linear-gradient(rgba( 255, 255, 255, 0.0) 0%,
+										rgba( 248, 248, 248, 0.2) 1px,
+										rgba( 255, 255, 255, 0.4) 20%,
+										rgba( 249, 249, 249, 0.3) 60%,
+										rgba( 240, 240, 240, 0.2) 100%) !important;
+										
+		
+	margin-left: 0px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	
+	border-radius: 0px 4px 0px 0px;
+	-moz-border-radius: 0px 4px 4px 0px;
+	-webkit-border-radius: 0px 4px 4px 0px;
+	border: solid 1px rgb(80,80,80) !important; 
+	border-left: none !important;
+	border-bottom: none !important;
+	box-shadow: 1px 1px 8px -5px rgba(0, 0, 0, 0.8) !important;
+	min-height: 24px;
+	padding: 2px 8px 2px 20px;
+	
+}
+div.hl.active {
+	border-color: rgb( 60, 60, 60) !important;
+	box-shadow: -2px 0px 8px -4px rgba(0, 0, 0, 0.8) !important;
+}
+
+div.hl.active,
+div.hl.Unread{
+	background-color : 	rgb(249, 249, 249) !important;
+	background-repeat: 	repeat-y  !important;
+	background-position:0px 0px  !important;
+	background-size:	26px 100%, 100% 100% !important;
+	background-image: 	url(images/grauerSkin_hgr_l.png),
+						linear-gradient(rgba( 255, 255, 255, 0.0) 0%,
+										rgba( 248, 248, 248, 0.2) 1px,
+										rgba( 255, 255, 255, 0.8) 20%,
+										rgba( 249, 249, 249, 0.8) 60%,
+										rgba( 240, 240, 240, 0.5) 100%) !important;
+}
+div.hlLeft,
+div.hlTitle,
+span.hlUpdated ,
+div.hlRight {
+	display: table-cell;
+    vertical-align: top;
+    padding: 0px;
+}
+div.hlLeft {
+	white-space: nowrap;
+    padding-left: 0px;
+}
+
+div.hlTitle {
+    width: 100%;
+	padding-left: 10px !important;
+	padding-right: 8px !important;
+}
+
+.hl div.hlTitle a{
+    font-size: 1.4em;
+    color: rgb(110, 110, 110);
+    font-weight: bold;
+	font-style: italic;
+    cursor: pointer;
+}
+.hl.Unread div.hlTitle a,
+.hl.active div.hlTitle a {
+    color: rgb(30, 32, 35);
+	font-style: normal !important;
+}
+
+.hl span.contentPreview ,
+.hl span.contentPreview:hover {
+	display: block;
+	font-weight: lighter;
+	font-style: italic;
+	color: rgb(140, 140, 140);
+	font-size: 0.8em !important;
+	font-family: sans-serif;
+	line-height: 1.2em;
+}
+.hl.active span.contentPreview,
+.hl.Unread span.contentPreview,
+.hl.Unread span.contentPreview:hover  {
+	font-size: 0.8em !important;
+    font-weight: normal !important;
+	font-style: normal !important;
+	line-height: 1.2em;
+	color: rgb( 80, 80, 80) !important;
+	
+}
+
+
+div.cdm .hlFeed a,
+div.cdmHeader div.hlFeed a ,
+a.hlFeed {
+    color: gray;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 8px !important;
+	display:block;
+	width: 120px !important;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	background: transparent !important;
+
+    white-space: nowrap;
+
+    border-radius: 0px;
+    display: inline-block;
+    padding: 0px 4px;
+    margin-bottom: 2px;
+    margin-top: 0px;
+    color: gray;
+text-align: right;
+}
+
+div.cdm .hlFeed a:hover,
+div.cdmHeader div.hlFeed a:hover,
+a.hlFeed:hover {
+    color: rgb( 0, 0, 0);
+}
+
+#content-insert {
+    padding: 0px;
+    overflow: auto;
+	border-radius: 0px;
+	border: 1px solid rgb(140, 140, 140);
+	border-bottom-width: 0px;
+    border-right-width: 0px;
+	background-color: rgb(169, 169, 169) !important;
+}
+div.postReply  {
+	width: 96%;
+	max-width: 880px;
+	border-bottom: 1px solid rgb(140, 140, 140);
+	border-right: 1px solid rgb(140, 140, 140);
+}
+
+div.postReply a {
+    color: rgb(176, 176, 176) !important;
+}
+
+div.postReply a:hover{
+color: rgb(76, 76, 76) !important;
+}
+
+div.postReply div.postHeader {
+	display : block !important;
+	padding: 12px 8px 4px 20px ;
+	border-bottom: 1px solid rgba( 28, 28, 28, 0.1);
+
+	background-color : 	rgb(249, 249, 249) !important;
+	background-repeat: 	repeat-y  !important;
+	background-position:0px 0px  !important;
+	background-size:	26px 100%, 100% 100% !important;
+	background-image: 	url(images/grauerSkin_hgr_l.png),
+						linear-gradient(rgba( 255, 255, 255, 0.0) 0%,
+										rgba( 248, 248, 248, 0.2) 1px,
+										rgba( 255, 255, 255, 0.8) 20%,
+										rgba( 249, 249, 249, 0.8) 60%,
+										rgba( 240, 240, 240, 0.5) 100%) !important;
+										
+	box-shadow: -6px 0px 4px rgba( 30, 30, 30, 0.05);
+
+}
+
+.postReply .postDate { 
+    font-weight: normal;
+	font-style: normal;
+	color: rgb(140, 140, 140);
+	font-size: 10px !important;
+    text-align: right;
+    float: right;
+	padding-right: 10px;
+}
+
+.postReply .postTitle,
+.postReply .postTitle a,
+.postReply .postTitle a:hover {
+    font-weight: bold !important;
+	font-style: normal !important;
+	color: rgb(0, 0, 0) !important;
+	font-size: 16px !important;
+    white-space: nowrap;
+	overflow: hidden; 
+	text-overflow: ellipsis;
+	padding: 0px 4px 4px 20px;
+}
+
+.postHeader .postTags {
+padding: 0px 0px 2px 36px;
+float:none !important;
+clear:both;
+}
+.postTags ~ div{
+display:none;
+}
+
+/* --- Kombinierte Entrie-Anzeige --- */
+/* alle auf */
+div.postReply,
+div.cdm.expanded,
+div.cdm.Selected,
+div.cdm.active {
+	overflow: hidden;
+	
+	width:96%;
+	max-width:880px;
+	
+	background-color : 	rgb(242, 242, 242) !important;
+	background-repeat: 	repeat-y  !important;
+	background-position:0px 0px  !important;
+	background-size:	32px 32px, 100% 100% !important;
+	background-image: 	url(images/grauerSkin_hgr_l.png),
+						linear-gradient(rgba( 	0, 0, 0, 0.0) 0%,
+										rgba( 	0, 0, 0, 0.05) 50%,
+										rgba( 	0, 0, 0, 0.0) 100%) !important;
+										
+	margin-left: 0px !important;
+	margin-top: 2px !important;
+	margin-bottom: 2px !important;
+
+	border-radius: 0px 5px 5px 0px;
+	-moz-border-radius: 0px 5px 5px 0px;
+	-webkit-border-radius: 0px 5px 5px 0px;
+	border: solid 1px rgb(110,110,110) !important; 
+	border-left: none !important;
+	box-shadow: 1px 1px 8px -5px rgba(0, 0, 0, 0.8) !important;
+}
+/*zu*/
+div.cdm.expandable{
+	overflow: hidden;
+	
+	width:96%;
+	max-width:880px;
+	
+	background-color : 	rgb(242, 242, 242) !important;
+	background-repeat: 	repeat-y  !important;
+	background-position:0px 0px  !important;
+	background-size:	32px 32px, 100% 100% !important;
+	background-image: 	url(images/grauerSkin_hgr_l.png),
+						linear-gradient(rgba( 	0, 0, 0, 0.0) 0%,
+										rgba( 	0, 0, 0, 0.05) 50%,
+										rgba( 	0, 0, 0, 0.0) 100%) !important;
+										
+		
+	margin-left: 0px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+	
+	border-radius: 0px 4px 0px 0px;
+	-moz-border-radius: 0px 4px 4px 0px;
+	-webkit-border-radius: 0px 4px 4px 0px;
+	border: solid 1px rgb(120,120,120) !important; 
+	border-left: none !important;
+	border-bottom: none !important;
+	box-shadow: 1px 1px 8px -5px rgba(0, 0, 0, 0.8) !important;
+}
+/*auf*/
+div.cdm.expandable.active {
+	border-color: rgb(10,10,10) !important; 
+	box-shadow: -2px 0px 8px -4px rgba(0, 0, 0, 0.8) !important;
+}
+/*einer*/
+div.postReply{
+	width:97%;
+	max-width:100%;
+	margin-left: 0px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border: solid 1px rgb(110,110,110) !important; 
+	border-left: none !important;
+	border-top: none !important;
+}
+/*fix*/
+div.cdm.expanded > hr {
+	display:none;
+}
+
+/*cdmHeader*/
+.cdmHeader,
+div.cdm.expanded div.cdmHeader {
+	display : block !important;
+	padding: 8px 8px 2px 20px ;
+	border-bottom: 1px solid rgba( 28, 28, 28, 0.1);
+
+	background-color : 	rgb(249, 249, 249) !important;
+	background-repeat: 	repeat-y  !important;
+	background-position:0px 0px  !important;
+	background-size:	26px 100%, 100% 100% !important;
+	background-image: 	url(images/grauerSkin_hgr_l.png),
+						linear-gradient(rgba( 255, 255, 255, 0.0) 0%,
+										rgba( 248, 248, 248, 0.2) 1px,
+										rgba( 255, 255, 255, 0.8) 20%,
+										rgba( 249, 249, 249, 0.8) 60%,
+										rgba( 240, 240, 240, 0.5) 100%) !important;
+										
+	box-shadow: -6px 0px 4px rgba( 30, 30, 30, 0.05);
+}
+.cdmHeader > *,
+.expanded .cdmHeader  > *
+ {
+    display: table-cell !important;
+    padding: 0px !important;
+	margin:0px !important;
+	vertical-align: top !important;
+}
+
+.cdmHeader .titleWrap,
+.expanded .cdmHeader .titleWrap {
+	padding-left: 10px !important;
+	padding-right: 8px !important;
+}
+
+div.cdm.active div.cdmHeader a.title, 
+div.cdm.active.Selected div.cdmHeader a.title,
+div.cdm.expanded.Unread div.cdmHeader a.title {
+    font-weight: normal !important;
+	font-style: normal !important;
+	color: rgb(0, 0, 0) !important;
+	font-size: 1.8em !important;
+	text-transform: uppercase !important;
+	font-family: Georgia,serif !important;
+}
+
+div.cdm.expanded div.cdmHeader a.title {
+	font-weight: lighter;
+	font-style: italic;
+	color: rgb(130, 130, 130);
+	font-size: 1.8em !important;
+	text-transform: uppercase;
+	font-family: Georgia,serif;
+}
+
+.Unread .cdmHeader a.title{
+    font-weight: normal;
+	font-style: normal;
+	color: rgb(0, 0, 0);
+	font-size: 1.4em !important;
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+
+.cdmHeader a.title{
+	font-weight: lighter;
+	font-style: italic;
+	color: rgb(130, 130, 130);
+	font-size: 1.4em !important;
+	text-transform: uppercase;
+	font-family: sans-serif;
+}
+
+.Selected .cdmHeader a.title{
+	font-size: 1.4em !important;
+}
+
+.cdmHeader span.author {
+    padding-left: 5px !important;
+    color: rgb(130, 130, 130);
+    font-size: 11px;
+    font-weight: normal;
+	white-space: nowrap;
+}
+
+.cdmHeader .hlFeed,
+.cdmHeader span.updated,
+.cdmHeader span.updated ~ div{
+	vertical-align: top !important;
+}
+
+
+
+div.cdmHeader > span {
+width:100%;
+}
+
+.cdmHeader span.updated,
+.cdmHeader span.updated ~ div{
+	width:auto !important;
+}
+
+div.cdmHeader span.updated {
+	padding-right: 5px !important;
+	padding-left:5px !important;
+    color: rgb(130, 130, 130);
+    font-weight: normal;
+    font-style: italic;
+    font-size: 8px;
+}
+
+
+/*Content*/
+div.cdmContent {
+    background: rgba(246, 246, 246, 0) !important;
+}
+
+div.postReply,
+div.cdm.expanded div.cdmContent,
+div.cdm.active div.cdmContent{
+	color: rgb(80, 80, 80) !important;
+	font-size: 1.2em !important;
+}
+
+div.postReply a,
+.cdmContent a {
+	color: rgb(80, 80, 80) !important;
+	font-weight: bold;
+}
+div.postReply a:hover,
+.cdmContent a:hover {
+	color: rgb(80, 80, 220) !important;
+} 
+
+div.postContent,
+div.cdmContentInner {
+    margin: 20px 50px 12px 80px !important;
+	line-height: 1.6em;
+}
+div.postContent > *,
+div.cdmContentInner > * {
+    max-width: 90% !important;
+}
+div.postContent iframe,
+div.cdmContentInner iframe {
+    min-width: 50% !important;
+    max-width: 96% !important;
+	
+	background-color : rgb(252, 252, 252) !important;
+
+	box-shadow: 1px 1px 8px -4px rgba(0, 0, 0, 0.5) !important;
+	border: 1px solid rgb(30,30,30);
+	margin: 14px;
+	padding: 4px;
+}
+div.postContent img,
+div.cdmContentInner img/*,
+div.cdmContentInner img:not([src*="NerdcoreRSS2"]):not([src*="blank.gif"]) */{
+    max-width: 98% !important;
+    height: auto !important;
+	
+	background-color : rgb(252, 252, 252) !important;
+
+	box-shadow: 1px 1px 8px -4px rgba(0, 0, 0, 0.5) !important;
+	border: 1px solid rgb(30,30,30) !important;
+	margin: 14px;
+	padding: 4px;
+}
+
+div.postContent div,     div.postContent p,     div.postContent table,     div.postContent tr,     div.postContent tbody,
+div.cdmContentInner div, div.cdmContentInner p, div.cdmContentInner table, div.cdmContentInner tr, div.cdmContentInner tbody {
+    max-width: 100% !important;
+	display: block;
+	background-color : transparent !important;
+}
+div.postContent td,
+div.cdmContentInner td {
+    max-width: 100% !important;
+	background-color : transparent !important;
+	display: inline-block;
+}
+
+div.postContent span > a:before, div.postContent p > a:before,
+.cdmContentInner span > a:before, .cdmContentInner p > a:before{
+	content: "\00bb";
+	font-size: 1.0em !important;
+	color: gray;
+}
+
+div.postContent span > a:after,
+div.postContent p > a:after,
+.cdmContentInner span > a:after,
+.cdmContentInner p > a:after{
+	content: "\00ab";
+	font-size: 1.0em !important;
+	color: gray;
+}
+
+div.postContent blockquote,
+div.cdmContentInner blockquote {
+
+	max-width: 80% !important;
+	
+	background-color : rgb(249, 249, 249) !important;
+    border-color: rgb(102, 102, 102) !important;
+    margin: 5px 0px 5px 20px!important;
+    padding: 6px !important;
+	padding-left: 20px !important;
+    color: gray !important;
+    border-style: solid !important;
+    border-width: 0px 0px 0px 2px !important;
+    box-shadow: 1px 1px 8px -4px rgba(0, 0, 0, 0.5) !important;
+	color: rgb( 100, 100, 100)!important;
+}
+div.postContent blockquote li,
+div.cdmContentInner blockquote li {
+
+	max-width: 90% !important;
+	padding: 2px 0px !important;
+}
+
+div.postContent h3,
+div.cdmContentInner h3 {
+	max-width: 80% !important;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-width: 0px 0px 1px;
+    border-style: solid;
+    border-color: rgba( 156, 154, 155, 0.3);
+}
+/*footer*/
+.cdmFooter {
+
+	font-size: 0.9em;
+
+	padding: 4px 0px 4px 80px !important;
+	background-color : 	rgb(249, 249, 249) !important;
+	background-repeat: 	repeat-y  !important;
+	background-position:0px 0px  !important;
+	background-size:	26px 100%, 100% 100% !important;
+	background-image: 	url(images/grauerSkin_hgr_l.png),
+						linear-gradient(rgba( 255, 255, 255, 0.0) 0%,
+										rgba( 248, 248, 248, 0.2) 1px,
+										rgba( 252, 252, 252, 0.8) 20%,
+										rgba( 245, 245, 245, 0.8) 60%,
+										rgba( 235, 235, 235, 0.5) 100%) !important;
+	
+	border-top: 1px solid rgba(28,28,28,0.1);
+	box-shadow: -6px 0px 4px rgba( 30, 30, 30, 0.05);	
+}
+
+.cdmFooter a{
+	color: rgb(176, 176, 176) !important;
+}
+.cdmFooter a:hover {
+    color: rgb(6, 6, 6) !important;
+}
+
+span.cdmExcerpt {
+    font-size: 1.1em;
+    color: rgb(130, 130, 130);
+    font-weight: normal;
+    cursor: pointer;
+    display: block;
+	max-height: 26px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+img.feedIcon[src*="images/tag.png"],
+img.feedIcon[src*="images/fresh.png"],
+img.feedIcon[src*="images/mark_set.svg"],
+img.feedIcon[src*="images/pub_set.svg"],
+img.feedIcon[src*="images/archive.png"],
+img.feedIcon[src*="images/recently_read.png"]{
+	min-height: 16px;
+	max-width:	0px;
+	background-repeat: no-repeat !important;
+	background-position: 0px 0px  !important;
+	background-size: 16px 16px !important;
+	padding: 0px 0px 0px 16px;
+}
+img.feedIcon[src*="images/tag.png"]  {
+	background-image: url(images/grauerSkin_tag.png);
+}
+img.feedIcon[src*="images/mark_set.svg"]  {
+	background-image: url(images/grauerSkin_mark_set.png);
+}
+img.feedIcon[src*="images/pub_set.svg"]  {
+	background-image: url(images/grauerSkin_pub_set.png);
+}
+img.feedIcon[src*="images/fresh.png"]  {
+	background-image: url(images/grauerSkin_fresh.png);
+}
+img.feedIcon[src*="images/recently_read.png"]  {
+	background-image: url(images/grauerSkin_recently_read.png);
+}
+img.feedIcon[src*="images/archive.png"]  {
+	background-image: url(images/grauerSkin_archive.png);
+}
+
+
+
+
+/* image fix */
+div.postContent img[src*=".gif"], 									div.cdmContentInner img[src*=".gif"],
+div.postContent img[src*="NerdcoreRSS2"],								div.cdmContentInner img[src*="NerdcoreRSS2"],
+div.postContent img[src*="feeds.feedburner.com/~ff/macro-manie"],		div.cdmContentInner img[src*="feeds.feedburner.com/~ff/macro-manie"],
+div.postContent img[src*="wp-content/plugins/blogwerk/services/"],	div.cdmContentInner img[src*="wp-content/plugins/blogwerk/services/"] {
+	background-color: transparent !important;
+	box-shadow: none !important;
+	border: none!important;
+	margin: 0px!important;
+	padding: 0px!important;
+}
+
+/* image werbezeug fix
+img[src*="aaa.gif"]  {
+	display: none;
+}*/
