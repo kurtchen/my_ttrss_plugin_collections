@@ -58,7 +58,7 @@ class mobilize extends Plugin {
 	}
 
   function hook_hotkey_map($hotkeys) {
-  	$hotkeys['v'] = "mobilize";
+  	$hotkeys['a m'] = "mobilize";
   	return $hotkeys;
  	}
 
